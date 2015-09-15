@@ -5,6 +5,9 @@ public class RowData {
 	private String value;
 	private String contentFromJavaFile;
 	private String contentFromXmlFile;
+	
+	private boolean highLight = false;
+	private boolean firstRow;
 
 	public RowData(String name, String value, String contentFromJavaFile, String contentFromXmlFile) {
 		this.name = name;
@@ -43,6 +46,22 @@ public class RowData {
 
 	public void setContentFromXmlFile(String contentFromXmlFile) {
 		this.contentFromXmlFile = contentFromXmlFile;
+	}
+
+	public boolean isHighLight() {
+		return highLight;
+	}
+
+	public void setHighLight(boolean highLight) {
+		this.highLight = highLight;
+	}
+
+	public boolean isFirstRow() {
+		return firstRow;
+	}
+
+	public void setFirstRow(boolean firstRow) {
+		this.firstRow = firstRow;
 	}
 	
 }
